@@ -1,0 +1,32 @@
+body{
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+}
+
+.animacao{
+    /* Shorthand */
+    animation: minhaAnimacao 3s;
+    /* animation-name: minhaAnimacao;
+    animation-duration: 5s;
+    animation-iteration-count: infinite; */
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    background-color: blue;
+    width: 300px;
+    height: 300px;
+}
+
+@keyframes minhaAnimacao {
+    0% {
+        transform: scale(0.1);
+        opacity: 0;
+    }
+    60% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+    }
+}

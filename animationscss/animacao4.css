@@ -1,0 +1,22 @@
+body{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.carregar{
+    animation: rotacionar 2s infinite;
+    border: 10px solid black;
+    border-radius: 50%;
+    border-top-color: aqua;
+    height: 100px;
+    width: 100px;
+}
+
+@keyframes rotacionar {
+    to {
+        transform: rotate(1turn);
+    }
+}

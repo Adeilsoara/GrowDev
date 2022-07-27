@@ -1,0 +1,29 @@
+body{
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+}
+
+.animacao{
+    animation: minhaAnimacao 1s;
+    background-color: blue;
+    height: 300px;
+    width: 300px;
+}
+
+@keyframes minhaAnimacao {
+  /*   0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    } */
+    
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}

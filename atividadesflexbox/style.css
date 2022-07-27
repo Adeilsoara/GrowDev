@@ -1,0 +1,27 @@
+.bolaAmarela{
+    background-color: yellow;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.bolaAzul{
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.caixaAzul{
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+}
+
+.alinhar{
+    height: 100vh;
+}
+
+.alinharQuadrados{
+    height: 50vh;
+}
