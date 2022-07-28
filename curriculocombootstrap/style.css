@@ -1,12 +1,13 @@
 *{
     box-sizing: border-box;
-   /*  border: solid 1px red; */
+    border: solid 1px red;
     overflow: hidden;
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 .barra-lateral{
     background-color: coral;
+    height: 100vh;
 }
 
 .menu{
@@ -28,11 +29,11 @@ img{
     border: 5px solid maroon;
     width: 200px;
     height: 200px;
-    margin: 5vh;
+   /*  margin: 5vh; */
 }
 
 .conteudo{
-    margin-top: 35vh;
+   /*  margin-top: 35vh; */
 }
 
 .conteudo span{
