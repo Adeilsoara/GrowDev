@@ -9,17 +9,17 @@
     <link rel="stylesheet" href="style.css">
     <title>Stranger Things</title>
 </head>
-
 <body>
+    <!-- Navbar com bootstrap -->
     <header>
-        <!-- Navbar com bootstrap -->
         <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
             <div class="container-fluid">
                 <a href="#" class="navbar-brand">Estranger Things</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuCollapse" aria-controls="menuCollapse" aria-expanded="false">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuCollapse"
+                aria-controls="menuCollapse" aria-expanded="true">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-    
+                <!-- Os itens do Menu -->
                 <div class="collapse navbar-collapse" id="menuCollapse">
                     <ul class="navbar-nav me-auto mb-2 mb-md-0">
                         <li class="nav-item">
@@ -32,25 +32,59 @@
                             <a class="nav-link" href="#conteudo">Temporadas</a>
                         </li>
                     </ul>
+                    <!-- campo de pesquisa do menu/navbar -->
                     <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Pesquisar">
+                        <input class="form-control me-2" type="search" placeholder="Buscar">
                         <button class="btn btn-outline-success" type="submit">Pesquisar</button>
                     </form>
                 </div>
             </div>
-        </nav>
-    </header>
-   
+        </nav><!-- final navbar -->
+    </header><!-- final header -->
+
     <main>
         <!-- Carousel -->
         <div id="meuCarousel" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
-                <button type="button" data-bs-target="#meuCarousel" data-bs-slide-to="0" class="active" aria-current="true"></button>
+                <button type="button" data-bs-target="#meuCarousel" data-bs-slide-to="0" class="active"
+                aria-current="true"></button>
                 <button type="button" data-bs-target="#meuCarousel" data-bs-slide-to="1"></button>
                 <button type="button" data-bs-target="#meuCarousel" data-bs-slide-to="2"></button>
             </div>
+
             <div class="carousel-inner">
+                <!-- slide 01 -->
                 <div class="carousel-item active">
+                    <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <rect width="100%" height="100%" fill="#777"/>
+                    </svg>
+
+                    <div class="container">
+                        <div class="carousel-caption text-start">
+                            <h1>Texto</h1>
+                            <p>Algum texto para dar início ao slide do nosso site</p>
+                            <p><a class="btn btn-lg btn-primary" href="">Leia mais..</a></p>
+                        </div>
+                    </div>
+                </div> <!-- fim slide 01 -->
+
+                <!-- slide 02 -->
+                <div class="carousel-item">
+                    <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <rect width="100%" height="100%" fill="#777"/>
+                    </svg>
+
+                    <div class="container">
+                        <div class="carousel-caption text-end">
+                            <h1>Texto</h1>
+                            <p>Algum texto para dar início ao slide do nosso site</p>
+                            <p><a class="btn btn-lg btn-primary" href="#">Leia mais</a></p>
+                        </div>
+                    </div>
+                </div><!-- fim slide 02 -->
+
+                <!-- início slide 03 -->
+                <div class="carousel-item">
                     <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
                         <rect width="100%" height="100%" fill="#777"/>
                     </svg>
@@ -58,130 +92,65 @@
                     <div class="container">
                         <div class="carousel-caption">
                             <h1>Texto</h1>
-                            <p>Algum texto para dar inicio ao slide do nosso site</p>
-                            <p><a class="btn btn-lg btn-primary" href="">Leia mais</a></p>
+                            <p>Algum texto para dar início ao slide do nosso site</p>
+                            <p><a class="btn btn-lg btn-primary" href="#">Leia mais</a></p>
                         </div>
                     </div>
-                </div>
+                </div> <!-- fim slide 03 -->
 
-                <div class="carousel-item">
-                    <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-                        <rect width="100%" height="100%" fill="#776"/>
-                    </svg>
-            
-                    <div class="container">
-                      <div class="carousel-caption">
-                        <h1>Texto</h1>
-                        <p>Algum texto para dar inicio ao slide do nosso site</p>
-                        <p><a class="btn btn-lg btn-primary" href="#">Leia mais</a></p>
-                      </div>
-                    </div>
-                </div>
+            </div><!-- fim carousel-inner -->
 
-                <div class="carousel-item">
-                    <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-                        <rect width="100%" height="100%" fill="#777"/>
-                    </svg>
-            
-                    <div class="container">
-                      <div class="carousel-caption">
-                        <h1>Texto</h1>
-                        <p>Algum texto para dar inicio ao slide do nosso site.</p>
-                        <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
-                      </div>
-                    </div>
-                  </div>
-            </div>
-
+            <!-- seta da esquerda -->
             <button class="carousel-control-prev" type="button" data-bs-target="#meuCarousel" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Anterior</span>
             </button>
+
+            <!-- seta da direita -->
             <button class="carousel-control-next" type="button" data-bs-target="#meuCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Próximo</span>
+                <span class="carousel-control-next-icon"></span>
             </button>
-        </div>
+        </div><!-- final corousel grazadeus -->
 
         <!-- Colunas para personagens -->
         <div class="container personagens" id="personagens">
-
             <!-- Divisão de uma linha em três colunas utilizando o grid bootstrap -->
-            <div class="row"><!-- início da linha -->
-                <div class="col-lg-4">
-                    <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
-                        <title>Placeholder</title>
-                        <rect width="100%" height="100%" fill="#777"/>
-                        <text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
-                    </svg>
-                    <h2 class="fw-normal">Eleven</h2>
-                    <p>Descrição da personagem</p>
-                    <p><a class="btn btn-secondary" href="#">Conhecer mais &raquo;</a></p>
-                </div>
-
-                <div class="col-lg-4">
-                    <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
-                        <title>Placeholder</title>
-                        <rect width="100%" height="100%" fill="#777"/>
-                        <text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
-                    </svg>
-                    <h2 class="fw-normal">Eleven</h2>
-                    <p>Descrição da personagem</p>
-                    <p><a class="btn btn-secondary" href="#">Conhecer mais &raquo;</a></p>
-                </div><!-- coluna -->
-
-                <div class="col-lg-4">
-                    <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
-                        <title>Placeholder</title>
-                        <rect width="100%" height="100%" fill="#777"/>
-                        <text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
-                    </svg>
-                    <h2 class="fw-normal">Eleven</h2>
-                    <p>Descrição da personagem</p>
-                    <p><a class="btn btn-secondary" href="#">Conhecer mais &raquo;</a></p>
-                </div> <!-- coluna -->
-            </div><!-- fim da linha -->
-
-            <!-- Conteúdo da página -->
-            <hr class="linha-divisoria"  id="conteudo">
             <div class="row">
-                <div class="col-md-7">
-                    <h2 class="cabecalho-conteudo fw-normal lh-1">Temporada 01 <span class="text-muted">Episódio 01</span> </h2>
-                    <p class="lead">Algum conteúdo sobre esse episódio nessa temporada</p>
-                </div>
-                <div class="col-md-5">
-                    <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <div class="col-lg-4">
+                    <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
                         <title>Placeholder</title>
-                        <rect width="100%" height="100%" fill="#eee"/>
+                        <rect width="100%" height="100%" fill="#777"/>
+                        <text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
                     </svg>
+                    <h2 class="fw-normal">Eleven</h2>
+                    <p>Descrição da personagem</p>
+                    <p><a class="btn btn-secondary" href="">Conhecer mais &raquo;</a></p>
+                </div>
+
+                <div class="col-lg-4">
+                    <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <title>Placeholder</title>
+                        <rect width="100%" height="100%" fill="#777"/>
+                        <text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
+                    </svg>
+                    <h2 class="fw-normal">Eleven</h2>
+                    <p>Descrição da personagem</p>
+                    <p><a class="btn btn-secondary" href="">Conhecer mais &raquo;</a></p>
+                </div>
+
+                <div class="col-lg-4">
+                    <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <title>Placeholder</title>
+                        <rect width="100%" height="100%" fill="#777"/>
+                        <text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
+                    </svg>
+                    <h2 class="fw-normal">Eleven</h2>
+                    <p>Descrição da personagem</p>
+                    <p><a class="btn btn-secondary" href="">Conhecer mais &raquo;</a></p>
                 </div>
             </div>
-
-            <hr class="linha-divisoria">
-
-            <div class="row">
-                <div class="col-md-7 order-md-2">
-                    <h2 class="cabecalho-conteudo fw-normal lh-1">Temporada 02 <span class="text-muted">Episódio 04</span> </h2>
-                    <p class="lead">Algum conteúdo sobre esse episódio nessa temporada</p>
-                </div>
-                <div class="col-md-5 order-md-1">
-                    <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false">
-                        <title>Placeholder</title>
-                        <rect width="100%" height="100%" fill="#eee"/>                    </svg>
-                </div>
-            </div>
-
-            <hr class="linha-divisoria">
-            <!-- final do conteudo -->
-        </div><!-- final do container -->
-
-        <!-- footer -->
-        <footer class="container">
-            <p class="float-end"><a href="#">Voltar para o inicio</a></p>
-            <p>&copy; 2022 Front-end II</p>
-        </footer>
+        </div>
     </main>
     <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
