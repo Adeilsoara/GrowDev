@@ -35,6 +35,7 @@ body{
     letter-spacing: -.05rem;
 }
 
+/* Responsividade para conteúdos CSS */
 @media (min-width: 40em){
     .carousel-caption p {
         margin-bottom: 1.25rem;
