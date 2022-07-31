@@ -14,7 +14,7 @@ body{
     height: 100px;
     width: 100px;
 }
-
+/* Forma dde girar a animação */
 @keyframes rotacionar {
     to{
         transform: rotate(1turn);
